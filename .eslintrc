@@ -17,6 +17,8 @@
     "space-after-keywords": 0,
     "space-return-throw-case": 0,
     "react-native/no-unused-styles": 2,
-    "react-native/split-platform-components": 2
+    "react-native/split-platform-components": 2,
+    "react/prefer-stateless-function": 0,
+    "jsx-a11y/anchor-has-content": 0
   }
 }
