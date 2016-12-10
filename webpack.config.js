@@ -1,9 +1,17 @@
+
+const modulesToBabelify = [
+  'react-native-lightbox',
+  'react-native-transformable-image',
+]
+const includedFilesRegExp = modulesToBabelify.map(name => `(?!/${name})`).join()
+const babelExcludeRegexp = new RegExp(`node_modules${includedFilesRegExp}`)
+
 module.exports = {
   entry: './index.js',
   output: {
     path: './dist',
-    filename: 'shoutem-animation.js',
-    library: '@shoutem/animation',
+    filename: 'shoutem-ui.js',
+    library: '@shoutem/ui',
     libraryTarget: 'umd',
   },
   module: {
@@ -11,7 +19,11 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: ['babel-loader'],
-        exclude: /node_modules/,
+        exclude: babelExcludeRegexp,
+      },
+      {
+        test: /\.json$/,
+        loaders: ['json-loader'],
       },
     ],
   },

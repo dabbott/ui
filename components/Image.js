@@ -32,7 +32,7 @@ class Image extends Component {
         ...props,
         // Image views are not rendered on Android if there is no image to display,
         // so we fallback to a transparent image to be compatible with iOS
-        source: defaultSource || require('../assets/images/transparent.png'),
+        source: defaultSource, // || require('../assets/images/transparent.png'),
         // Fixes a bug with local image resizing on Android:
         // https://github.com/facebook/react-native/issues/4598#issuecomment-162328501
         style: { ...props.style, width: null },

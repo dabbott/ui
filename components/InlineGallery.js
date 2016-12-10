@@ -103,7 +103,8 @@ class InlineGallery extends Component {
           <Image
             source={{ uri: source }}
             style={{ flex: 1 }}
-            defaultSource={require('../assets/images/image-fallback.png')}
+            // defaultSource={require('../assets/images/image-fallback.png')}
+            defaultSource={{ uri: 'https://placehold.it/100x100' }}
           />
         </View>
       </TouchableOpacity>

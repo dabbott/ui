@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lightbox } from '../../index';
+import Lightbox from 'react-native-lightbox';
 import { Image } from '../Image';
 
 function isImageNode(node) {
@@ -26,4 +26,3 @@ function transformImageTag(node, style) {
 }
 
 export default transformImageTag;
-
