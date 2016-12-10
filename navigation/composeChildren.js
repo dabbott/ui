@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Share from 'react-native-share';
+// import Share from 'react-native-share';
 import _ from 'lodash';
 
 import {
@@ -26,14 +26,14 @@ const composers = {
       return undefined;
     }
 
-    const onShare = () =>
-      Share.open({
-        title: value.title || navBarProps.title,
-        message: value.text,
-        url: value.link,
-      }, (sharingError) => {
-        console.error(sharingError);
-      });
+    const onShare = () => {};
+      // Share.open({
+      //   title: value.title || navBarProps.title,
+      //   message: value.text,
+      //   url: value.link,
+      // }, (sharingError) => {
+      //   console.error(sharingError);
+      // });
 
     return {
       renderRightComponent() {
