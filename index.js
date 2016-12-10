@@ -1,3 +1,5 @@
+import './fonts';
+
 import { setDefaultThemeStyle } from './init';
 import getTheme from './theme';
 
