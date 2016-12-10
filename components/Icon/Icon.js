@@ -5,10 +5,12 @@
 
 import { connectStyle } from '@shoutem/theme';
 import { connectAnimation } from '@shoutem/animation';
-import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
-import icoMoonConfig from './config.json';
+// import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
+// import icoMoonConfig from './config.json';
 
-const IconComponent = createIconSetFromIcoMoon(icoMoonConfig);
+const IconComponent = require('react-native').View;
+
+// const IconComponent = createIconSetFromIcoMoon(icoMoonConfig);
 const AnimatedIcon = connectAnimation(IconComponent);
 const Icon = connectStyle('shoutem.ui.Icon')(AnimatedIcon);
 

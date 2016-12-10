@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
+// import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import { connectStyle } from '@shoutem/theme';
 
@@ -61,7 +61,8 @@ class ImagePreview extends Component {
       const closeButton = (
         <View style={style.header}>
           <TouchableOpacity style={style.fullScreen} onPress={this.onPressCloseButton}>
-            <Icon name={CLOSE_ICON_NAME} size={CLOSE_ICON_SIZE} style={style.closeIcon} />
+            <View style={{ width: CLOSE_ICON_SIZE, height: CLOSE_ICON_SIZE, backgroundColor: 'red' }} />
+            {/* <Icon name={CLOSE_ICON_NAME} size={CLOSE_ICON_SIZE} style={style.closeIcon} /> */}
           </TouchableOpacity>
         </View>
       );
