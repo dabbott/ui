@@ -20,7 +20,7 @@ const ZoomableImage = makeZoomable(Image);
 const propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
-  source: Image.propTypes.source,
+  // source: Image.propTypes.source,
   style: PropTypes.object,
 };
 
