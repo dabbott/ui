@@ -7,7 +7,7 @@ const includedFilesRegExp = modulesToBabelify.map(name => `(?!/${name})`).join()
 const babelExcludeRegexp = new RegExp(`node_modules${includedFilesRegExp}`)
 
 module.exports = {
-  entry: './index.js',
+  entry: './start.js',
   output: {
     path: './dist',
     filename: 'shoutem-ui.js',
