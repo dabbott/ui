@@ -1,5 +1,6 @@
 import './fonts';
 import './shim/StatusBar';
+import './shim/Modal';
 
 import { setDefaultThemeStyle } from './init';
 import getTheme from './theme';

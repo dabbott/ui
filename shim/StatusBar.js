@@ -59,7 +59,7 @@ ReactNative.StatusBar = class StatusBar extends Component {
 const styles = StyleSheet.create({
   container: {
     height: 20,
-    position: 'absolute',
+    position: 'fixed',
     top: 0,
     left: 0,
     right: 0,
