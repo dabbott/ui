@@ -40,5 +40,17 @@ module.exports = {
       commonjs: 'react-native',
       amd: 'react-native',
     },
+    '@shoutem/animation': {
+      root: 'ShoutemAnimation',
+      commonjs2: '@shoutem/animation',
+      commonjs: '@shoutem/animation',
+      amd: '@shoutem/animation',
+    },
+    '@shoutem/theme': {
+      root: 'ShoutemTheme',
+      commonjs2: '@shoutem/theme',
+      commonjs: '@shoutem/theme',
+      amd: '@shoutem/theme',
+    },
   },
 }
